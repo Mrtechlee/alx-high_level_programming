@@ -1,3 +1,4 @@
+
 ==============================
 How to Use 2-matrix_divided.py
 ==============================
@@ -163,3 +164,4 @@ is raised.
     >>> print(matrix_divided(matrix, 0))
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
+
