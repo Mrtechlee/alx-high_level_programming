@@ -1,22 +1,21 @@
 #!/usr/bin/python3
-"""writing a docstring"""
+"""Magic class from a given ByteCode."""
 import math
 
 
 class MagicClass:
-    """set up the magic"""
-
+    """Initialization of the MagicClass."""
     def __init__(self, radius=0):
-        """ writing another docstring """
-        self.__radius = 0
+        """Initialization of the data."""
+        self._MagicClass__radius = 0
         if type(radius) is not int and type(radius) is not float:
-            raise TypeError('radius must be a number')
-        self.__radius = radius
+            raise TypeError("radius must be a number")
+        self._MagicClass__radius = radius
 
     def area(self):
-        """again with the docstring"""
-        return self.__radius ** 2 * math.pi
+        """Calculation of the area."""
+        return self._MagicClass__radius ** 2 * math.pi
 
     def circumference(self):
-        """such docstring"""
-        return 2 * math.pi * self.__radius
+        """Calculation of the circumference."""
+        return 2 * math.pi * self._MagicClass__radius
