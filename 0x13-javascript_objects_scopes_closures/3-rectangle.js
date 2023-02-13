@@ -1,10 +1,26 @@
 #!/usr/bin/node
-module.exports = class Rectangle {
+/**
+ * Check the parameters provided
+ */
+class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) { [this.width, this.height] = [w, h]; }
+    if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0) {
+      this.width = w;
+      this.height = h;
+    }
   }
 
   print () {
-    for (let i = 0; i < this.height; i++) console.log('X'.repeat(this.width));
+    for (let i = 0; i < this.height; i++) {
+      let myVar = '';
+      let y = 0;
+      while (y < this.width) {
+        myVar += 'X';
+        y++;
+      }
+
+      console.log(myVar);
+    }
   }
-};
+}
+module.exports = Rectangle;
